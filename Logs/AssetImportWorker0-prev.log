@@ -15,7 +15,7 @@ D:/ForCoding/JARVIS
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51719
+53885
 Successfully changed project path to: D:/ForCoding/JARVIS
 D:/ForCoding/JARVIS
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -48,9 +48,9 @@ D:/ForCoding/JARVIS
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 Unable to join player connection multicast group (err: 10013).
-Player connection [40148] Host "[IP] 172.20.240.1 [Port] 0 [Flags] 2 [Guid] 1333761985 [EditorId] 1333761985 [Version] 1048832 [Id] WindowsEditor(7,WolfMax) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [41804] Host "[IP] 172.20.240.1 [Port] 0 [Flags] 2 [Guid] 2571187004 [EditorId] 2571187004 [Version] 1048832 [Id] WindowsEditor(7,WolfMax) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 42.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.23f1 (213b516bf396)
 [Subsystems] Discovering subsystems at path D:/Tools/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -66,75 +66,73 @@ Initialize mono
 Mono path[0] = 'D:/Tools/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Tools/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Tools/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Tools/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002031 seconds.
+Registered in 0.003535 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 42.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 55.32 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.394 seconds
+- Completed reload, in  0.574 seconds
 Domain Reload Profiling:
-	ReloadAssembly (394ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (575ms)
+		BeginReloadAssembly (103ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (281ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (378ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (64ms)
+			SetupTypeCache (81ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (18ms)
-			SetupLoadedEditorAssemblies (167ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (235ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (42ms)
+				RefreshPlugins (55ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (90ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002069 seconds.
+Registered in 0.004307 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\ForCoding\JARVIS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\ForCoding\JARVIS\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 55.43 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.600 seconds
+- Completed reload, in  1.137 seconds
 Domain Reload Profiling:
-	ReloadAssembly (600ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (1137ms)
+		BeginReloadAssembly (85ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (468ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (984ms)
+			LoadAssemblies (221ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (145ms)
+			SetupTypeCache (290ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (221ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (366ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (156ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
+				RefreshPlugins (55ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (232ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -142,13 +140,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3046 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (113.4 KB). Loaded Objects now: 3506.
-Memory consumption went from 107.7 MB to 107.6 MB.
-Total: 2.203500 ms (FindLiveObjects: 0.183800 ms CreateObjectMapping: 0.063400 ms MarkObjects: 1.882200 ms  DeleteObjects: 0.073300 ms)
+Unloading 4134 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 29 unused Assets / (113.4 KB). Loaded Objects now: 4593.
+Memory consumption went from 152.9 MB to 152.8 MB.
+Total: 2.651700 ms (FindLiveObjects: 0.217000 ms CreateObjectMapping: 0.102400 ms MarkObjects: 2.261100 ms  DeleteObjects: 0.070500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,39 +158,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 31683.875949 seconds.
-  path: Assets/ThirdParty
-  artifactKey: Guid(e32651814db3f884f8a7b02dcaf692a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ThirdParty using Guid(e32651814db3f884f8a7b02dcaf692a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c8195e329cce16adc63bc36c0e8327') in 0.007609 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.484040 seconds.
-  path: Assets/ThirdParty/OkGoDoIt
-  artifactKey: Guid(636f6f7bc889f934788ebf52d8149987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ThirdParty/OkGoDoIt using Guid(636f6f7bc889f934788ebf52d8149987) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcef9a53dea9d5b6c0bbf700a01d09ed') in 0.005725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 313.463140 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.005548 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 421.942688 seconds.
-  path: Assets/ThirdParty/OkGoDoIt/OpenAI_API
-  artifactKey: Guid(e3867de4d0fafc04ca14784b2e903742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ThirdParty/OkGoDoIt/OpenAI_API using Guid(e3867de4d0fafc04ca14784b2e903742) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ca8b85fae00d67f552818c2a338212') in 0.006206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.054629 seconds.
-  path: Assets/ThirdParty/OkGoDoIt/OpenAI_API/nuget_logo.png
-  artifactKey: Guid(4f3ab2f40a751214a8031106254e3093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ThirdParty/OkGoDoIt/OpenAI_API/nuget_logo.png using Guid(4f3ab2f40a751214a8031106254e3093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8209eeb8173c0539d35396b278371ec6') in 0.047199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.203180 seconds.
-  path: Assets/ThirdParty/OkGoDoIt/OpenAI_API/IOpenAIAPI.cs
-  artifactKey: Guid(41b2425740138ad42a0ad241f494d4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ThirdParty/OkGoDoIt/OpenAI_API/IOpenAIAPI.cs using Guid(41b2425740138ad42a0ad241f494d4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642ef4823a4d9d7a99571bfcb590b2c3') in 0.007712 seconds 
