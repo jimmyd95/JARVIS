@@ -42,7 +42,7 @@ public class OpenAIController : MonoBehaviour
 
         inputField.text = "";
         string intro = "Greetings, my name is JARVIS. Let me know what you need.";
-        inputField.text = intro;
+        textField.text = intro;
         Debug.Log(intro);
     }
     private async void GetResponse()
@@ -105,12 +105,6 @@ public class OpenAIController : MonoBehaviour
 
         // enable the disabled button
         submit.enabled = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     // oculus voice SDK
