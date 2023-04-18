@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: jarvisVoiceSDK
+  m_EditorClassIdentifier: 
+  _clientAccessToken: WRELJWDQ3FVVLFAXBB6F44Z7FYARQDB5
+  _appInfo:
+    name: jarvis
+    id: 1506136376581440
+    lang: en
+    isPrivate: 0
+    createdAt: 2023-04-17T09:56:54-0700
+    trainingStatus: 1
+    lastTrainDuration: 30
+    lastTrainedAt: 2023-04-17T10:18:10-0700
+    nextTrainAt: 2023-04-17T10:17:40-0700
+    intents:
+    - id: 251100560649178
+      name: get_time
+      entities:
+      - name: question:question
+        id: 237904032112349
+      - name: wit$age_of_person:age_of_person
+        id: 175850238710124
+    - id: 1156126365785326
+      name: question
+      entities:
+      - name: color:color
+        id: 118930567836405
+      - name: question:question
+        id: 237904032112349
+      - name: wit$location:location
+        id: 3101666390139402
+      - name: wit$temperature:temperature
+        id: 179890111596043
+    - id: 769776824742131
+      name: wit$check_weather_condition
+      entities: []
+    entities:
+    - name: color
+      id: 1394824551343068
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: color
+        id: 118930567836405
+      keywords:
+      - keyword: beige
+        synonyms:
+        - beige
+      - keyword: black
+        synonyms:
+        - black
+      - keyword: blue
+        synonyms:
+        - blue
+      - keyword: brown
+        synonyms:
+        - brown
+      - keyword: color
+        synonyms:
+        - color
+      - keyword: cyan
+        synonyms:
+        - cyan
+      - keyword: gray
+        synonyms:
+        - gray
+      - keyword: green
+        synonyms:
+        - green
+      - keyword: grey
+        synonyms:
+        - grey
+      - keyword: melon
+        synonyms:
+        - melon
+      - keyword: orange
+        synonyms:
+        - orange
+      - keyword: pink
+        synonyms:
+        - pink
+      - keyword: purple
+        synonyms:
+        - purple
+      - keyword: red
+        synonyms:
+        - red
+      - keyword: white
+        synonyms:
+        - white
+      - keyword: yellow
+        synonyms:
+        - yellow
+    - name: question
+      id: 1229736174574504
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: question
+        id: 237904032112349
+      keywords:
+      - keyword: how
+        synonyms:
+        - how
+      - keyword: what
+        synonyms:
+        - what
+      - keyword: what time
+        synonyms:
+        - when
+      - keyword: where
+        synonyms:
+        - where
+      - keyword: which
+        synonyms:
+        - which
+      - keyword: who
+        synonyms:
+        - who
+      - keyword: why
+        synonyms:
+        - why
+    - name: wit$age_of_person
+      id: 535a810a-4a07-4b7f-b943-b44bf8eb7acf
+      lookups: []
+      roles:
+      - name: age_of_person
+        id: 175850238710124
+      - name: old
+        id: 205687652184949
+      keywords: []
+    - name: wit$location
+      id: 535a80ff-6399-4653-8b2a-c770dd014965
+      lookups: []
+      roles:
+      - name: location
+        id: 3101666390139402
+      - name: where
+        id: 931993727946254
+      keywords: []
+    - name: wit$temperature
+      id: 535a80f3-766b-49e7-bfb9-f4dedafc10aa
+      lookups: []
+      roles:
+      - name: cold
+        id: 3495229564098761
+      - name: freeze
+        id: 218561954120134
+      - name: hot
+        id: 115550544843942
+      - name: temperature
+        id: 179890111596043
+      keywords: []
+    traits: []
+    voices:
+    - name: Charlie
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - fast
+      - projected
+    - name: Cooper
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Prospector
+      locale: en_US
+      gender: male
+      styles:
+      - default
+    - name: Rebecca
+      locale: en_US
+      gender: female
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+    - name: Vampire
+      locale: en_US
+      gender: male
+      styles:
+      - default
+      - soft
+      - formal
+      - fast
+      - projected
+  _configurationId: fbfea859-bb88-46d8-aee0-c6dd9b9b70ba
+  timeoutMS: 10000
+  endpointConfiguration:
+    uriScheme: 
+    authority: 
+    port: 0
+    witApiVersion: 
+    speech: 
+    message: 
+    dictation: 
+  isDemoOnly: 0
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-92fd8495-dcc3-4173-9836-0d2b744bd6ad.json
+  excludedAssemblies: []
+  relaxedResolution: 0

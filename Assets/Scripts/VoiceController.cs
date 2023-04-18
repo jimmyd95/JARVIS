@@ -51,4 +51,12 @@ public class VoiceController : MonoBehaviour
             appVoiceExperience.Activate();
         }
     }
+
+    private static void DisplayValues(string prefix, string[] info)
+    {
+        foreach (var item in info)
+        {
+            Debug.Log($"{prefix} {item}");
+        }
+    }
 }
