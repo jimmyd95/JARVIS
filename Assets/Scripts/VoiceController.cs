@@ -23,7 +23,7 @@ public class VoiceController : MonoBehaviour
         appVoiceExperience.VoiceEvents.onFullTranscription.AddListener((transcription) =>
         {
             fullTranscriptText.text = transcription;
-        });        
+        });
         
         appVoiceExperience.VoiceEvents.onPartialTranscription.AddListener((transcription) =>
         {
@@ -45,11 +45,11 @@ public class VoiceController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // press specific buttons to make the oculus listen
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && !appVoiceActive)
-        {
-            appVoiceExperience.Activate();
-        }
+        //// press specific buttons to make the oculus listen
+        //if (Keyboard.current.spaceKey.wasPressedThisFrame && !appVoiceActive)
+        //{
+        //    appVoiceExperience.Activate();
+        //}
     }
 
     private static void DisplayValues(string prefix, string[] info)

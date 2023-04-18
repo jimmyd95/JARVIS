@@ -108,6 +108,7 @@
     <Compile Include="Assets\ThirdParty\OkGoDoIt\OpenAI_API\OpenAIAPI.cs" />
     <Compile Include="Assets\ThirdParty\OkGoDoIt\OpenAI_API\Images\ImageSize.cs" />
     <Compile Include="Assets\ThirdParty\OkGoDoIt\OpenAI_API\Chat\ChatMessage.cs" />
+    <Compile Include="Assets\Scripts\modifiedInteractionHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -862,6 +863,12 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Oculus">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
