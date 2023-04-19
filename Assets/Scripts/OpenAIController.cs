@@ -19,6 +19,11 @@ public class OpenAIController : MonoBehaviour
     private OpenAIAPI api;
     private List<ChatMessage> messages;
 
+    [Header("BallAI")]
+    [SerializeField] private GameObject _ballAI;
+    private float _originalRotationSpeed;
+    private Vector3 _originalVectorScale;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +33,9 @@ public class OpenAIController : MonoBehaviour
 
         StartConversation();
         submit.onClick.AddListener(() => GetResponse());
+
+        _originalRotationSpeed = _ballAI.GetComponent<AIAnimation>()._rotationSpeed;
+        _originalVectorScale = _ballAI.GetComponent<AIAnimation>()._vectorScale;
     }
 
     private void StartConversation()
@@ -59,6 +67,11 @@ public class OpenAIController : MonoBehaviour
         ChatMessage userMessage = new ChatMessage();
         userMessage.Role = ChatMessageRole.User;
         userMessage.Content = inputField.text;
+        if (inputField.text != null)
+        {
+            _ballAI.GetComponent<AIAnimation>().setAIAnimationResponse(_originalRotationSpeed * 10,
+                _originalVectorScale * 10);
+        }
         // cut budget short and make sure we don't spam user message
         if (userMessage.Content.Length > charLimit)
         {
@@ -73,10 +86,13 @@ public class OpenAIController : MonoBehaviour
         // update the text field with user's own message
         textField.text = string.Format(userName + ": {0}", userMessage.Content);
 
-        // insert animation here. letting it "think"
 
         // refresh input field
         inputField.text = "";
+
+        // insert animation here. letting it "think faster"
+        _ballAI.GetComponent<AIAnimation>().setAIAnimationResponse(_originalRotationSpeed * 50,
+            _originalVectorScale * 50);
 
         // send asynchronous chat completion request to OpenAI, set model
         var chatResult = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
@@ -102,6 +118,10 @@ public class OpenAIController : MonoBehaviour
         // update the text field with the response
         textField.text = string.Format(userName + ": {0}\n\n" +
             "Jarvis: {1}", userMessage.Content, responseMessage.Content);
+
+        // reset animation
+        _ballAI.GetComponent<AIAnimation>().setAIAnimationResponse(_originalRotationSpeed,
+            _originalVectorScale);
 
         // enable the disabled button
         submit.enabled = true;

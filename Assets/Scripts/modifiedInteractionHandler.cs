@@ -99,8 +99,8 @@ namespace Oculus.Voice.Demo
         private void OnListenStart()
         {
             _textArea.text = $"Listening...";
-            _ballAI.GetComponent<AIAnimation>()._rotationSpeed *= 10;
-            _ballAI.GetComponent<AIAnimation>()._vectorScale *= 10;
+            _ballAI.GetComponent<AIAnimation>().setAIAnimationResponse(_originalRotationSpeed * 10,
+                _originalVectorScale * 10);
         }
         // Listen stop
         private void OnListenStop()
@@ -146,8 +146,7 @@ namespace Oculus.Voice.Demo
         private void OnRequestComplete()
         {
             _active = false;
-            _ballAI.GetComponent<AIAnimation>()._rotationSpeed = _originalRotationSpeed;
-            _ballAI.GetComponent<AIAnimation>()._vectorScale = _originalVectorScale;
+            _ballAI.GetComponent<AIAnimation>().setAIAnimationResponse(_originalRotationSpeed, _originalVectorScale);
         }
 
         // Toggle activation

@@ -37,7 +37,7 @@ public class AIAnimation : MonoBehaviour
     }
 
     // turn the cube in random rocation, in my case, starting from zero to 360 with 2 degree increment
-    public void RandomRotate()
+    void RandomRotate()
     {
         // rotate the vector 360 degrees
         Vector3 rotationDegrees = _rotationDegree * new Vector3(Random.Range(0, 180), Random.Range(0, 180), Random.Range(0, 180));
@@ -46,7 +46,7 @@ public class AIAnimation : MonoBehaviour
     }
 
     // Create a pulsing effect when "talking"
-    public void VoiceResponseScale()
+    void VoiceResponseScale()
     {
         if (scaleIncrease)
         {
@@ -60,6 +60,12 @@ public class AIAnimation : MonoBehaviour
             _coreLayer.transform.localScale -= _vectorScale;
             _fringeLayer.transform.localScale -= _vectorScale;
         }
+    }
+
+    public void setAIAnimationResponse(float rotation, Vector3 scale)
+    {
+        _rotationSpeed = rotation;
+        _vectorScale = scale;
     }
 
 }
