@@ -14,7 +14,7 @@ public class OpenAIController : MonoBehaviour
     public string userName;
     public Button submit;
 
-    [SerializeField] private int charLimit;
+    [SerializeField] private int charLimit = 100;
 
     private OpenAIAPI api;
     private List<ChatMessage> messages;
@@ -97,7 +97,7 @@ public class OpenAIController : MonoBehaviour
         // send asynchronous chat completion request to OpenAI, set model
         var chatResult = await api.Chat.CreateChatCompletionAsync(new ChatRequest()
         {
-            Model = Model.ChatGPTTurbo, // provide a chat version
+            Model = "gpt-3.5-turbo", // provide a chat version
             Temperature = 0.3, // how "creative it becomes"
             MaxTokens = 50, // make the responses short and sweet (also makes you pay less money...)
             Messages = messages // allows the chat to "remember" what you said previously
@@ -116,7 +116,7 @@ public class OpenAIController : MonoBehaviour
         // insert the "closure" animation where the bot response with a fancy voice animation
 
         // update the text field with the response
-        textField.text = string.Format(userName + ": {0}\n\n" +
+        textField.text = string.Format(userName + ": {0}\n" +
             "Jarvis: {1}", userMessage.Content, responseMessage.Content);
 
         // reset animation
