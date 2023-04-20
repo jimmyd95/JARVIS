@@ -44,7 +44,8 @@ public class OpenAIController : MonoBehaviour
         {
             // implement a preset "characteristic" for the AI
             new ChatMessage(ChatMessageRole.System,
-            "You are a British butler who is good with humor and sarcasm. You often keep your responses short and to the point."
+            "Your name is Jarvis. You are a British butler who is good with humor and sarcasm. " +
+            "You often keep your responses short and to the point."
             )
         };
 
@@ -126,6 +127,4 @@ public class OpenAIController : MonoBehaviour
         // enable the disabled button
         submit.enabled = true;
     }
-
-    // oculus voice SDK
 }
