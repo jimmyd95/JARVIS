@@ -59,16 +59,21 @@ namespace OpenAI_API
 			{
 				throw new AuthenticationException("You must provide API authentication.  Please refer to https://github.com/OkGoDoIt/OpenAI-API-dotnet#authentication for details.");
 			}
-
-			/*
-			if (_Api.SharedHttpClient==null)
-			{
-				_Api.SharedHttpClient = new HttpClient();
-				_Api.SharedHttpClient.
-			}
-			*/
-
+			
+			// I couldn't figure out why HttpClientFactory don't work, so I commented out since
+			// this is the only one referencing it
+			//HttpClient client;
+			//var clientFactory = _Api.HttpClientFactory;
+			//if (clientFactory != null)
+			//{
+			//	client = clientFactory.CreateClient();
+			//}
+			//else
+			//{
+			//	client = new HttpClient();
+			//}
 			HttpClient client = new HttpClient();
+
 			client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _Api.Auth.ApiKey);
 			// Further authentication-header used for Azure openAI service
 			client.DefaultRequestHeaders.Add("api-key", _Api.Auth.ApiKey);
